@@ -11,6 +11,7 @@ updateDisplay();
 
 COUNT_PLUS.addEventListener("click", () => {
   count++;
+  COUNT_PLUS.textContent = count;
   updateDisplay();
 });
 
