@@ -31,6 +31,50 @@ li {
   justify-content: center;
   align-items: center;
 }
+.result {
+  width: 90%;
+  margin-top: 20%;
+  font-family: "Loto sans-serif", sans-serif;
+  font-size: 2.5rem;
+  outline: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: right;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.minus-button {
+  width: 90px;
+  padding: 2px;
+  margin: 4px;
+  position: relative;
+  left: 23px;
+  top: 20px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border-radius: 6px;
+  background-color: red;
+}
+
+.plus-button {
+  width: 90px;
+  padding: 2px;
+  margin: 4px;
+  position: relative;
+  left: 23px;
+  top: 20px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border-radius: 6px;
+  background-color: blue;
+}
 
 #root {
   flex: 1;
