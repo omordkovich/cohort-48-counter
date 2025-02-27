@@ -51,6 +51,8 @@ li {
 .card {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 20px;
   border: 1px solid #ccc;
@@ -61,14 +63,9 @@ li {
   width: 300px;
 }
 
-#counter-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .minus-button,
 .plus-button {
+  width: 200px;
   padding: 10px 20px;
   margin: 5px 0;
   border: none;
@@ -84,13 +81,17 @@ li {
 .plus-button:hover {
   transform: translateY(-3px);
   background-color: #3e8e41;
-  height: 60px;
+}
+
+.minus-button:active,
+.plus-button:active {
+  background-color: #60be63;
 }
 
 .result {
   font-size: 24px;
   margin-top: 10px;
-  width: 90%;
+  width: 200px;
   font-family: "Loto sans-serif", sans-serif;
   font-size: 2.5rem;
   outline: none;
