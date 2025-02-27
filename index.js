@@ -8,14 +8,14 @@ function updateDisplay() {
   COUNT_DISPLAY.textContent = count;
 }
 updateDisplay();
-
-COUNT_PLUS.addEventListener("click", () => {
-  count++;
-  COUNT_PLUS.textContent = count;
+COUNT_PLUS.addEventListener("click", (event) => {
+  event.preventDefault();
+  COUNT_DISPLAY.textContent = ++count;
   updateDisplay();
 });
 
-COUNT_MINUS.addEventListener("click", () => {
-  count--;
+COUNT_MINUS.addEventListener("click", (event) => {
+  event.preventDefault();
+  COUNT_DISPLAY.textContent = --count;
   updateDisplay();
 });
