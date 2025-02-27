@@ -20,88 +20,84 @@ li {
   margin: 0;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#app-header {
+  text-align: center;
+  padding: 20px;
+  background-color: bisque;
+}
+
+#app-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(243, 204, 156);
+}
+
+.bacground_img {
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+}
+
 .card {
   display: flex;
-  width: 500px;
-  gap: 4px;
-  min-height: 200px;
-  max-height: 500px;
-  background-color: #94adcc;
-  border-radius: 12px;
+  align-items: center;
   justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: bisque;
+  height: 350px;
+  width: 300px;
+}
+
+#counter-form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
+
+.minus-button,
+.plus-button {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  transform: translateY(-3px);
+  background-color: #3e8e41;
+  height: 60px;
+}
+
 .result {
+  font-size: 24px;
+  margin-top: 10px;
   width: 90%;
-  margin-top: 20%;
   font-family: "Loto sans-serif", sans-serif;
   font-size: 2.5rem;
   outline: none;
   margin-left: 20px;
   margin-right: 20px;
   text-align: right;
-  border-radius: 5px;
-  background-color: gray;
-}
-
-.minus-button {
-  width: 90px;
-  padding: 2px;
-  margin: 4px;
-  position: relative;
-  left: 23px;
-  top: 20px;
-  height: 55px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: all 0.5s ease;
-  background-color: transparent;
-  border-radius: 6px;
-  background-color: red;
-}
-
-.plus-button {
-  width: 90px;
-  padding: 2px;
-  margin: 4px;
-  position: relative;
-  left: 23px;
-  top: 20px;
-  height: 55px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: all 0.5s ease;
-  background-color: transparent;
-  border-radius: 6px;
-  background-color: blue;
-}
-
-#root {
-  flex: 1;
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  background-color: #cdd9e7;
-}
-
-#app-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  padding: 10px;
-  border-bottom: 1px solid #000000;
-  background-color: #94adcc;
-  backdrop-filter: blur(17.8px);
-}
-
-#app-main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid rgb(212, 187, 187);
 }
 
 #app-footer {
